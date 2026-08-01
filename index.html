@@ -10,243 +10,459 @@
 
   <meta
     name="description"
-    content="Xiwen Huang is a PhD researcher at Imperial College London working on data markets, active learning, online learning, and algorithmic decision-making."
+    content="Xiwen Huang is a PhD researcher at Imperial College London working on data markets, active learning, online learning, bandits, and forecasting."
   >
 
-  <title>Xiwen Huang | Imperial College London</title>
+  <title>Xiwen Huang | AI, Data Markets & Online Learning</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
-    <nav class="container">
-      <a class="site-name" href="#top">Xiwen Huang</a>
+  <header class="site-header">
+    <div class="nav-container">
+      <a class="logo" href="#home">XH<span>.</span></a>
 
-      <div class="nav-links">
+      <nav class="nav-links">
         <a href="#about">About</a>
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
         <a href="#talks">Talks</a>
-        <a href="Xiwen_CV_2026.pdf" target="_blank">CV</a>
         <a href="#contact">Contact</a>
-      </div>
-    </nav>
+      </nav>
+
+      <a
+        class="nav-cv"
+        href="Xiwen_CV_2026.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        CV
+      </a>
+    </div>
   </header>
 
-  <main id="top" class="container">
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-background"></div>
 
-    <section class="hero">
-      <div>
-        <h1>Xiwen Huang</h1>
+      <div class="hero-container">
+        <div class="hero-content">
+          <p class="eyebrow">PhD Researcher · Imperial College London</p>
 
-        <p class="subtitle">
-          PhD Researcher at Imperial College London
-        </p>
+          <h1>
+            Xiwen Huang
+          </h1>
 
-        <p>
-          I study data markets, cost-aware machine learning, active learning,
-          online learning, and sequential decision-making. My research examines
-          how learning agents should acquire costly data under budget and
-          market constraints.
-        </p>
+          <h2>
+            Data Markets, Online Learning
+            <span>&amp; Quantitative AI</span>
+          </h2>
 
+          <p class="hero-description">
+            I study how learning agents should sequentially acquire costly data
+            under budget and market constraints, with applications in active
+            learning, bandits, forecasting, and multi-agent data markets.
+          </p>
+
+          <div class="research-tags">
+            <span>Active Learning</span>
+            <span>Bandits</span>
+            <span>Data Markets</span>
+            <span>Forecasting</span>
+            <span>Mechanism Design</span>
+          </div>
+
+          <div class="hero-actions">
+            <a
+              class="button button-primary"
+              href="Xiwen_CV_2026.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View CV
+            </a>
+
+            <a
+              class="button button-secondary"
+              href="mailto:xiwen.huang23@imperial.ac.uk"
+            >
+              Email Me
+            </a>
+          </div>
+
+          <div class="social-links">
+            <a
+              href="https://github.com/xiwenhuang123"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/huangxiwen/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+
+            <a
+              href="https://arxiv.org/abs/2606.17805"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              arXiv
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="image-frame">
+            <img
+              src="Xiwen_Huang_serious.png"
+              alt="Xiwen Huang"
+              class="profile-image"
+            >
+          </div>
+
+          <div class="status-card">
+            <span class="status-dot"></span>
+            <div>
+              <strong>Research focus</strong>
+              <p>Sequential decision-making under costly information</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section light-section">
+      <div class="section-container two-column">
         <div>
+          <p class="section-label">About</p>
+
+          <h2 class="section-title">
+            Learning, markets, and intelligent data acquisition
+          </h2>
+        </div>
+
+        <div class="about-copy">
+          <p>
+            I am a PhD researcher in Design Engineering at Imperial College
+            London, supervised by Professor Pierre Pinson.
+          </p>
+
+          <p>
+            My research lies at the intersection of machine learning,
+            optimisation, algorithmic economics, and market design. I develop
+            algorithms for acquiring and allocating data when information is
+            costly, dynamic, and strategically supplied.
+          </p>
+
+          <p>
+            I am particularly interested in active learning markets,
+            cost-aware online learning, Thompson Sampling, combinatorial
+            bandits, forecasting, and multi-agent decision-making.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="section grey-section">
+      <div class="section-container">
+        <p class="section-label">Research</p>
+
+        <div class="section-heading-row">
+          <h2 class="section-title">Current research themes</h2>
+
+          <p class="section-intro">
+            Methods for learning efficiently when data, labels, and information
+            must be actively purchased.
+          </p>
+        </div>
+
+        <div class="card-grid">
+          <article class="research-card">
+            <div class="card-number">01</div>
+
+            <h3>Active Learning Markets</h3>
+
+            <p>
+              Market mechanisms and learning algorithms for cost-effective
+              label acquisition under heterogeneous data prices.
+            </p>
+
+            <div class="card-footer">
+              Data valuation · Acquisition · Forecasting
+            </div>
+          </article>
+
+          <article class="research-card">
+            <div class="card-number">02</div>
+
+            <h3>Online & Sequential Learning</h3>
+
+            <p>
+              Decision-making over time under uncertainty, limited budgets,
+              shifting distributions, and incomplete feedback.
+            </p>
+
+            <div class="card-footer">
+              Bandits · Thompson Sampling · Non-stationarity
+            </div>
+          </article>
+
+          <article class="research-card">
+            <div class="card-number">03</div>
+
+            <h3>Multi-Agent Data Markets</h3>
+
+            <p>
+              Allocation and learning in environments with multiple buyers,
+              sellers, exclusivity constraints, and strategic interactions.
+            </p>
+
+            <div class="card-footer">
+              Allocation · Mechanism design · Multi-agent systems
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="section dark-section">
+      <div class="section-container">
+        <p class="section-label light-label">Publications</p>
+
+        <div class="section-heading-row">
+          <h2 class="section-title light-title">Selected work</h2>
+
+          <p class="section-intro light-intro">
+            Research on data acquisition, active learning, and market-based
+            machine learning.
+          </p>
+        </div>
+
+        <div class="publication-list">
+          <article class="publication-item">
+            <div class="publication-year">2026</div>
+
+            <div class="publication-content">
+              <p class="publication-type">Journal article</p>
+
+              <h3>
+                How to Purchase Labels? A Cost-Effective Approach Using Active
+                Learning Markets
+              </h3>
+
+              <p class="publication-authors">
+                Xiwen Huang and Pierre Pinson
+              </p>
+
+              <p class="publication-venue">
+                <em>INFORMS Journal on Data Science</em>
+              </p>
+
+              <p>
+                A cost-aware active learning market framework for predictive
+                modelling under label acquisition constraints.
+              </p>
+
+              <div class="publication-links">
+                <a
+                  href="https://doi.org/10.1287/ijds.2025.0093"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  DOI
+                </a>
+
+                <a
+                  href="https://arxiv.org/abs/2511.20605"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  arXiv
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication-item">
+            <div class="publication-year">2026</div>
+
+            <div class="publication-content">
+              <p class="publication-type">Working paper</p>
+
+              <h3>
+                QueryMarket: Cost-Aware Online Active Learning in Data Markets
+              </h3>
+
+              <p class="publication-authors">
+                Xiwen Huang and Pierre Pinson
+              </p>
+
+              <p class="publication-venue">
+                Manuscript under revision for resubmission to
+                <em>
+                  IEEE Transactions on Neural Networks and Learning Systems
+                </em>
+              </p>
+
+              <p>
+                Online active learning and sequential data acquisition under
+                budget constraints, with applications to dynamic data markets
+                and solar power forecasting.
+              </p>
+
+              <div class="publication-links">
+                <a
+                  href="https://arxiv.org/abs/2606.17805"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  arXiv
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication-item">
+            <div class="publication-year">Current</div>
+
+            <div class="publication-content">
+              <p class="publication-type">Ongoing research</p>
+
+              <h3>
+                Multi-Agent Cost-Aware Active Learning Markets
+              </h3>
+
+              <p>
+                Sequential data allocation in multi-buyer and multi-seller
+                markets using combinatorial bandits and Thompson Sampling.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="talks" class="section light-section">
+      <div class="section-container">
+        <p class="section-label">Talks & Recognition</p>
+
+        <div class="section-heading-row">
+          <h2 class="section-title">Selected presentations</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-date">2026</div>
+
+            <div>
+              <h3>Markets for Data and Analytics Applications</h3>
+              <p>IFORS 2026 · Vienna, Austria</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">2026</div>
+
+            <div>
+              <h3>
+                Generalised Data Markets: Learning, Agents, and Applications
+              </h3>
+              <p>Invited seminar · Johns Hopkins University</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">2025</div>
+
+            <div>
+              <h3>Active Learning Markets for Forecasting</h3>
+              <p>
+                International Symposium on Forecasting · Best Student
+                Presentation Award
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">2025</div>
+
+            <div>
+              <h3>Strategic Data Acquisition & Active Learning Markets</h3>
+              <p>
+                Technical University of Munich and ENBIS Young Statisticians
+                Session
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="section-container contact-container">
+        <div>
+          <p class="section-label light-label">Contact</p>
+
+          <h2>
+            Interested in online learning, data markets, or quantitative AI?
+          </h2>
+
+          <p>
+            I am open to research collaborations and opportunities related to
+            machine learning, bandits, data acquisition, forecasting, and
+            applied AI systems.
+          </p>
+        </div>
+
+        <div class="contact-actions">
           <a
-            class="button"
-            href="Xiwen_CV_2026.pdf"
-            target="_blank"
+            class="button button-light"
+            href="mailto:xiwen.huang23@imperial.ac.uk"
           >
-            View CV
+            xiwen.huang23@imperial.ac.uk
           </a>
 
           <a
-            class="button"
-            href="mailto:xiwen.huang23@imperial.ac.uk"
+            class="button button-outline-light"
+            href="Xiwen_CV_2026.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Email
+            Download CV
           </a>
         </div>
       </div>
-
-      <img
-        class="profile-photo"
-        src="Xiwen_Huang_serious.png"
-        alt="Portrait of Xiwen Huang"
-      >
     </section>
-
-    <section id="about">
-      <h2>About</h2>
-
-      <p>
-        I am a PhD researcher in Design Engineering at Imperial College London,
-        supervised by Professor Pierre Pinson. My work lies at the intersection
-        of machine learning, data markets, optimisation, and mechanism design.
-      </p>
-
-      <p>
-        I am particularly interested in active learning markets, cost-aware
-        data acquisition, multi-agent learning, bandit algorithms, Thompson
-        Sampling, and forecasting under uncertainty.
-      </p>
-    </section>
-
-    <section id="research">
-      <h2>Research</h2>
-
-      <div class="publication">
-        <p class="publication-title">
-          Cost-Aware Active Learning Markets
-        </p>
-        <p>
-          Designing market mechanisms and learning algorithms for acquiring
-          labels and data when observations are costly.
-        </p>
-      </div>
-
-      <div class="publication">
-        <p class="publication-title">
-          Online and Sequential Data Acquisition
-        </p>
-        <p>
-          Studying how learning agents make acquisition decisions over time
-          under changing data distributions and limited budgets.
-        </p>
-      </div>
-
-      <div class="publication">
-        <p class="publication-title">
-          Multi-Agent Data Markets
-        </p>
-        <p>
-          Developing allocation and learning methods for markets with multiple
-          buyers, sellers, and strategic constraints.
-        </p>
-      </div>
-    </section>
-
-    <section id="publications">
-      <h2>Selected Publications</h2>
-
-      <div class="publication">
-        <p class="publication-title">
-          How to Purchase Labels? A Cost-Effective Approach Using Active
-          Learning Markets
-        </p>
-
-        <p class="publication-meta">
-          Xiwen Huang and Pierre Pinson.
-          <em>INFORMS Journal on Data Science</em>, 2026.
-        </p>
-
-        <p>
-          <a
-            href="https://doi.org/10.1287/ijds.2025.0093"
-            target="_blank"
-          >
-            DOI
-          </a>
-        </p>
-      </div>
-
-      <div class="publication">
-        <p class="publication-title">
-          QueryMarket: Cost-Aware Online Active Learning in Data Markets
-        </p>
-
-        <p class="publication-meta">
-          Manuscript under revision for resubmission to
-          <em>
-            IEEE Transactions on Neural Networks and Learning Systems
-          </em>.
-        </p>
-
-        <p>
-          <a
-            href="https://arxiv.org/abs/2606.17805"
-            target="_blank"
-          >
-            arXiv
-          </a>
-        </p>
-      </div>
-
-      <div class="publication">
-        <p class="publication-title">
-          Multi-Agent Cost-Aware Active Learning Markets
-        </p>
-
-        <p class="publication-meta">
-          Ongoing research.
-        </p>
-      </div>
-    </section>
-
-    <section id="talks">
-      <h2>Selected Talks</h2>
-
-      <div class="publication">
-        <p class="publication-title">
-          Markets for Data and Analytics Applications
-        </p>
-        <p class="publication-meta">
-          IFORS 2026, Vienna.
-        </p>
-      </div>
-
-      <div class="publication">
-        <p class="publication-title">
-          Active Learning Markets for Forecasting
-        </p>
-        <p class="publication-meta">
-          International Symposium on Forecasting, Beijing, 2025.
-          Best Student Presentation Award.
-        </p>
-      </div>
-
-      <div class="publication">
-        <p class="publication-title">
-          Generalised Data Markets: Learning, Agents, and Applications
-        </p>
-        <p class="publication-meta">
-          Invited seminar, Johns Hopkins University, 2026.
-        </p>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-
-      <p>
-        Email:
-        <a href="mailto:xiwen.huang23@imperial.ac.uk">
-          xiwen.huang23@imperial.ac.uk
-        </a>
-      </p>
-
-      <p>
-        <a
-          href="https://www.linkedin.com/in/huangxiwen/"
-          target="_blank"
-        >
-          LinkedIn
-        </a>
-        ·
-        <a
-          href="https://github.com/xiwenhuang123"
-          target="_blank"
-        >
-          GitHub
-        </a>
-      </p>
-    </section>
-
   </main>
 
   <footer>
-    <div class="container">
-      © 2026 Xiwen Huang
+    <div class="footer-container">
+      <p>© 2026 Xiwen Huang</p>
+
+      <div>
+        <a
+          href="https://github.com/xiwenhuang123"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/huangxiwen/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+      </div>
     </div>
   </footer>
 </body>
