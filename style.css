@@ -1,0 +1,176 @@
+/* Basic reset */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #ffffff;
+}
+
+/* Main page width */
+.container {
+  width: min(960px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+/* Top navigation */
+header {
+  border-bottom: 1px solid #e5e5e5;
+  background: rgba(255, 255, 255, 0.96);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.site-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #111;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: #444;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+/* Introduction section */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 48px;
+  align-items: center;
+  padding: 80px 0 60px;
+}
+
+.hero h1 {
+  margin: 0 0 8px;
+  font-size: clamp(2.3rem, 6vw, 4rem);
+  line-height: 1.1;
+}
+
+.subtitle {
+  margin: 0 0 22px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.hero p {
+  max-width: 680px;
+}
+
+.profile-photo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+
+/* Links and buttons */
+a {
+  color: #145ea8;
+}
+
+a:hover {
+  color: #0b3d70;
+}
+
+.button {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 12px;
+  padding: 10px 16px;
+  border: 1px solid #222;
+  border-radius: 6px;
+  color: #222;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: #222;
+  color: #fff;
+}
+
+/* Content sections */
+section {
+  padding: 48px 0;
+  border-top: 1px solid #eeeeee;
+}
+
+section h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.publication {
+  margin-bottom: 24px;
+}
+
+.publication-title {
+  font-weight: 700;
+}
+
+.publication-meta {
+  color: #666;
+  margin-top: 4px;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding: 30px 0;
+  border-top: 1px solid #e5e5e5;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Mobile layout */
+@media (max-width: 720px) {
+  nav {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 16px 0;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 48px;
+  }
+
+  .profile-photo {
+    width: 170px;
+    height: 170px;
+    grid-row: 1;
+  }
+
+  .nav-links {
+    gap: 14px;
+  }
+}
